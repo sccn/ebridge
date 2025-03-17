@@ -62,14 +62,7 @@ A potential difference waveform is defined as the difference between the time-va
 
 eBridge.m employs the algorithm outlined in Alschuler et al. (2013) by using electrical distance (ED) frequency distributions to identify bridged channels. The continuous EEG data are first epoched into a **channels × epochs × sample points** MATLAB matrix. An ED matrix of size **channels × channels × epochs** is then computed from this epoched data, and each ED value is multiplied by a scale factor (100 / median ED value). The resulting EDs are summarized by their frequency distribution, which is interpolated to a bin size of 0.05 to improve reliability and resolution.
 
-*Enlarge figure*  
-*Annotated ED frequency distributions (0–10)*
-
 Please note the near-zero local peak (LP) in the distribution when 6 bridged channels are present. Such local peaks, confined almost exclusively to sessions with bridging, represent the extremely low EDs of bridged channel pairs. The algorithm detects a near-zero local peak (ED ≤ 3) and, if present, automatically identifies the local minimum (LM) with an ED ≤ 5 following the peak as the ED cutoff. If 50% or more of all epochs for a given pair of channels have EDs at or below this cutoff, both channels are classified as bridged.
-
-[Back to top](#eBridge-tutorial)
-
----
 
 ## 2. Using eBridge.m
 
@@ -112,7 +105,6 @@ To run eBridge.m on the imported data, enter:
 
 This command executes the eBridge function with the EEG data structure. Information about identified bridges will be displayed in the command window and stored in the EB structure.
 
-```markdown
 ## D. eBridge screen output
 
 During execution, the following messages may appear:
@@ -161,9 +153,9 @@ During execution, the following messages may appear:
 
 A plot of the ED distribution will also appear.
 
-*Enlarge figure*  
-*ED distribution plot (0–500)*  
-*ED distribution plot (0–5)*
+![Screenshot 2025-03-17 at 15 14 37](https://github.com/user-attachments/assets/4faa189b-b1b2-489a-94c5-cc3969c35f1c)
+
+*ED distribution plot (0–500)* and *ED distribution plot (0–5)*
 
 To zoom in on the early local peak and local minimum, change the x-axis limits from 0–500 to 0–5 by entering:
 
