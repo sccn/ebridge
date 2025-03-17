@@ -194,19 +194,10 @@ Since an electrolyte bridge cannot be undone once it occurs, it is advisable to 
 Bridged electrodes can be addressed after recording by excluding affected channels or averages, or by interpolating the data from bridged channels if the EEG montage contains a sufficient number of artifact-free channels.
 
 References
-
-	•	Alschuler, D.M., Tenke, C.E., Brudge, G.E., Kayser, J. (2014).
-Clinical Neurophysiology, 125(3), 484-490.
-doi:10.1016/j.clinph.2013.08.024
-	•	Greischar, L.L., Burghy, C.A., van Reekum, C.M., Jackson, D.C., Pizzagalli, D.A., Mueller, C., Davidson, R.J. (2004).
-Effects of electrode density and electrolyte spreading in dense array electroencephalographic recording.
-Clinical Neurophysiology, 115(3), 710-720.
-	•	Kappenmann, E.S., Luck, S.J. (2010).
-The effects of electrode impedance on data quality and statistical significance in ERP recordings.
-Psychophysiology, 47, 888-904.
-	•	Tenke, C.E., Kayser, J. (2001).
-A convenient method for detecting electrolyte bridges in multichannel electroencephalogram and event-related potential recordings.
-Clinical Neurophysiology, 112(3), 545-550.
+- Alschuler, D.M., Tenke, C.E., Brudge, G.E., Kayser, J. (2014). Clinical Neurophysiology, 125(3), 484-490. doi:10.1016/j.clinph.2013.08.024
+- Greischar, L.L., Burghy, C.A., van Reekum, C.M., Jackson, D.C., Pizzagalli, D.A., Mueller, C., Davidson, R.J. (2004). Effects of electrode density and electrolyte spreading in dense array electroencephalographic recording. Clinical Neurophysiology, 115(3), 710-720.
+- Kappenmann, E.S., Luck, S.J. (2010). The effects of electrode impedance on data quality and statistical significance in ERP recordings.
+Psychophysiology, 47, 888-904. Tenke, C.E., Kayser, J. (2001). A convenient method for detecting electrolyte bridges in multichannel electroencephalogram and event-related potential recordings. Clinical Neurophysiology, 112(3), 545-550.
 
 # version
 
