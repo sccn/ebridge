@@ -58,7 +58,13 @@ In a systematic survey of publicly available EEG datasets (Alschuler et al., 201
 
 The only reliable methods for finding bridged electrodes rely on pairwise comparisons between channels to detect nearly identical signals. Graphically superimposing two EEG/ERP waveforms can reveal bridged electrodes, but this approach is time-consuming and may miss some bridges. Instead, a systematic numerical approach based on the temporal variance of pairwise differences between waveforms recorded at each electrode can be used.
 
-A potential difference waveform is defined as the difference between the time-varying potentials **P** of channels *i* and *j*. Because any two channels that are electrically bridged will have near-identical waveforms, bridged channels can be identified as pairs with low-amplitude difference waveforms. The overall amplitude of a difference waveform can be quantified by its variance over time **T** (temporal variance; Tenke and Kayser, 2001; Neuroscan Inc., 1993; 1995).
+A potential difference waveform is defined as the difference between the time-varying potentials **P** of channels *i* and *j*, computed as 
+
+![Screenshot 2025-03-17 at 15 15 32](https://github.com/user-attachments/assets/626e1cda-600d-4994-8bb5-52284b0fee96)
+
+Because any two channels that are electrically bridged will have near-identical waveforms, bridged channels can be identified as pairs with low-amplitude difference waveforms. The overall amplitude of a difference waveform can be quantified by its variance over time **T** (temporal variance; Tenke and Kayser, 2001; Neuroscan Inc., 1993; 1995) defined as:
+
+![Screenshot 2025-03-17 at 15 16 29](https://github.com/user-attachments/assets/9080d8b4-9715-43b5-9c48-0de8d7be8145)
 
 eBridge.m employs the algorithm outlined in Alschuler et al. (2013) by using electrical distance (ED) frequency distributions to identify bridged channels. The continuous EEG data are first epoched into a **channels × epochs × sample points** MATLAB matrix. An ED matrix of size **channels × channels × epochs** is then computed from this epoched data, and each ED value is multiplied by a scale factor (100 / median ED value). The resulting EDs are summarized by their frequency distribution, which is interpolated to a bin size of 0.05 to improve reliability and resolution.
 
