@@ -86,7 +86,7 @@ To begin, download **eBridge.m** and the **eBridge.cnt** sample EEG file (ensure
 >> eeglab
 ```
 
-## B. Importing data
+### B. Importing data
 
 The NeuroScan format file **eBridge.cnt** is provided as an example of continuous EEG data. To import it using the EEGLAB GUI:
 - Open the EEGLAB window and select **File >> Import data >> Using EEGLAB functions and plugins >> From Neuroscan .cnt file**.
@@ -101,7 +101,7 @@ Alternatively, you can import the file using the `pop_loadcnt` function on the c
 >> help pop_loadcnt
 ```
 
-## C. Running eBridge
+### C. Running eBridge
 
 To run eBridge.m on the imported data, enter:
 
@@ -111,7 +111,7 @@ To run eBridge.m on the imported data, enter:
 
 This command executes the eBridge function with the EEG data structure. Information about identified bridges will be displayed in the command window and stored in the EB structure.
 
-## D. eBridge screen output
+### D. eBridge screen output
 
 During execution, the following messages may appear:
 
